@@ -2,11 +2,11 @@
 
 The code in this repository is an R (<https://cran.r-project.org>) implementation of the *"Rosetta"* algorithm described by Sbarra et al. 2023 (<https://doi.org/10.5194/nhess-23-1007-2023>). It calculates an estimation of hypocentral depth and magnitude of earthquakes based on Macroseismic Data Points (MDP) reported in the Database Macrosismico Italiano (DBMI) (<https://doi.org/10.13127/DBMI/DBMI15.4>).
 
-It takes a CSV file with a list of DBMI IDs as input, downloads data from the internet, and calculates every earthquake's estimated depth and magnitude plotting mobile averaged macroseismic intensities for an epicentral distance of 0 to 55 km.
+It takes a CSV file with a list of DBMI IDs as input, downloads data from the internet, and calculates every earthquake's estimated depth and magnitude, plotting mobile averaged macroseismic intensities for an epicentral distance of 0 to 55 km.
 
 To increase its readability, the code is extensively commented.
 
-**N.B.** The values shown in the S1 table of the article mentioned above were calculated based on DBMI version 15.2 (<https://doi.org/10.13.127/DBMI/DBMI15.2>). Instead, the script downloads the last available version from DBMI web services on the fly. There may be slight differences between versions, resulting in minor differences in the calculated values.
+**N.B.** The values shown in the S1 table of the article mentioned above were calculated based on DBMI version 15.2 (<https://doi.org/10.13.127/DBMI/DBMI15.2>). Instead, the script downloads the latest version from DBMI web services on the fly. There may be slight differences between versions, resulting in minor differences in the calculated values.
 
 ## BASIC USAGE
 
@@ -20,7 +20,7 @@ and
 
 then run the code in R (or RStudio) environment.
 
-The input file is a txt file with list of earthquakes to download File must be a single-column txt file with DBMI IDs one per row; see file `eventListTemplate.csv` for an example.
+The input file is a txt file with the list of earthquakes to download. The File must be a single-column txt file with DBMI IDs one per row; see file `eventListTemplate.csv` for an example.
 
 ## ADVANCED USAGE {#sec-advanced-usage}
 
@@ -61,7 +61,7 @@ The histogram shows the number of MDPs used in the calculation vs. epicentral di
 | DBMI Id                    | DBMI Id                                                                                        |
 | Epicentral area            | Epicentral area name as for DBMI                                                               |
 | Date                       | Date and time                                                                                  |
-| Mw                         | Registered/estimanted local magnitude (as for DBMI)                                            |
+| Mw                         | Registered/estimated local magnitude (as for DBMI)                                             |
 | Instrumental depth         | Registered hypocenter depth (if any)                                                           |
 | Total intensities          | Total number of reported MDPs                                                                  |
 | Intensities within 55 km   | Number of MDPs in a radius of 55 km from epicenter                                             |
@@ -79,9 +79,9 @@ The histogram shows the number of MDPs used in the calculation vs. epicentral di
 | Fault radius (W&C)         | Seismogenic fault estimated radius following Wells & Coppersmith (1994)                        |
 | Plot file                  | Location in the file system of the related plot file                                           |
 
-For a detailed description of all the parameters shown in the CSV file, please refer to Sbarra et al. 2023 (<https://doi.org/10.5194/nhess-23-1007-2023>).
+For a detailed description of all the parameters in the CSV file, please refer to Sbarra et al. 2023 (<https://doi.org/10.5194/nhess-23-1007-2023>).
 
-If you experience any problems, have any doubts or suggestions, please, [open an issue](https://github.com/INGV/rosetta/issues) on this GitHub repository.
+If you experience any problems or have doubts or suggestions, please [open an issue](https://github.com/INGV/rosetta/issues) on this GitHub repository.
 
 ## TO DO
 
