@@ -9,8 +9,7 @@ To increase its readability, the code is extensively commented.
 **N.B.** The values shown in the S1 table of the article mentioned above were calculated based on DBMI version 15.2 (<https://doi.org/10.13.127/DBMI/DBMI15.2>). Instead, the script downloads the latest version from DBMI web services on the fly. There may be slight differences between versions, resulting in minor differences in the calculated values.
 
 ## BASIC USAGE
-
-In main.R modify the parameters
+Download the repository locally. In "main.R" modify the parameters
 
 `eqEventsFile` to point to input CSV file
 
