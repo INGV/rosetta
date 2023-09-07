@@ -1,6 +1,6 @@
 ## ABOUT THIS WORK
 
-The code in tis repository is an R (<https://cran.r-project.org>) implementation of the *"Rosetta"* algorithm described by Sbarra et al. 2023 (<https://doi.org/10.5194/nhess-23-1007-2023>). It calculates an estimation of hypocentral depth and magnitude of earthquakes based on Macroseismic Data Points (MDP) reported in the Database Macrosismico Italiano (DBMI) (<https://doi.org/10.13127/DBMI/DBMI15.4>).
+The code in this repository is an R (<https://cran.r-project.org>) implementation of the *"Rosetta"* algorithm described by Sbarra et al. 2023 (<https://doi.org/10.5194/nhess-23-1007-2023>). It calculates an estimation of hypocentral depth and magnitude of earthquakes based on Macroseismic Data Points (MDP) reported in the Database Macrosismico Italiano (DBMI) (<https://doi.org/10.13127/DBMI/DBMI15.4>).
 
 It takes a CSV file with a list of DBMI IDs as input, downloads data from the internet, and calculates every earthquake's estimated depth and magnitude plotting mobile averaged macroseismic intensities for an epicentral distance of 0 to 55 km.
 
