@@ -13,13 +13,12 @@ Download the repository locally. In "main.R" modify the parameters
 
 `eqEventsFile` to point to input CSV file
 
-and
-
-`outdir` to indicate where to store results (CSV file and plots)
-
 then run the code in R (or RStudio) environment.
 
 The input file is a txt file with the list of earthquakes to download. The File must be a single-column txt file with DBMI IDs one per row; see file `eventListTemplate.csv` for an example.
+The output will be placed in a directory whose name is:
+
+*OUTDIR_YYYY_MM_DD_HH_MM_SS*
 
 ## ADVANCED USAGE {#sec-advanced-usage}
 
