@@ -97,7 +97,8 @@ scaricali <- function(inputID) {download.file(
         "?eventid=",
         inputID,
         "&includemdps=true&format=textmacro", sep = ""),
-  destfile = paste(downloadPath, "/", inputID, "_DBMI.csv", sep = ""))
+  destfile = paste(downloadPath, "/", inputID, "_DBMI.csv", sep = ""),
+  'libcurl')
   Sys.sleep(0.5)
 }
 
