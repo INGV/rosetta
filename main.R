@@ -54,7 +54,7 @@ histYES <- T
 ## Input file with list of earthquakes to download -------------------
 # File must be a single column txt file with DBMI IDs one per row
 # see file eventListTemplate.csv for an example
-eqEventsFile <- "~/Dropbox/Projects/Rosetta/dbmiEventsList2.csv"
+eqEventsFile <- "./eventListTemplate.csv"
 
 ## output directory declaration --------------------------------------
 #outdir <- "/home/roberto/Dropbox/Rosetta/outputDirectory"
