@@ -54,7 +54,7 @@ histYES <- T
 ## Input file with list of earthquakes to download -------------------
 # File must be a single column txt file with DBMI IDs one per row
 # see file eventListTemplate.csv for an example
-eqEventsFile <- "~/Dropbox/Projects/Rosetta/dbmiEventsList2.csv"
+eqEventsFile <- "./eventListTemplate.csv"
 
 ## output directory declaration --------------------------------------
 #outdir <- "/home/roberto/Dropbox/Rosetta/outputDirectory"
@@ -97,7 +97,8 @@ scaricali <- function(inputID) {download.file(
         "?eventid=",
         inputID,
         "&includemdps=true&format=textmacro", sep = ""),
-  destfile = paste(downloadPath, "/", inputID, "_DBMI.csv", sep = ""))
+  destfile = paste(downloadPath, "/", inputID, "_DBMI.csv", sep = ""),
+  'libcurl')
   Sys.sleep(0.5)
 }
 
